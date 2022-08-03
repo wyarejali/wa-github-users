@@ -10,7 +10,7 @@ const Users = () => {
   useEffect(() => {
     if (isLoading) return
     setUsers(data[page])
-  }, [page, isLoading])
+  }, [page, isLoading, data])
 
   const handlePage = (page) => {
     setPage(page)
